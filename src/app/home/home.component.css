@@ -1,0 +1,31 @@
+.carousel-item{
+    padding:15px;
+}
+.student-feedback-container{
+    display: inline-block;
+    width: 100%;
+}
+.borderImg{
+    width: 51%;
+    height: 100%;
+    border-radius: 69%;
+}
+.student-image-container{
+    width: 20%;
+    display: block;
+    margin: 0px auto;
+    height: 100px;
+    text-align: center;
+}
+.carousel-indicators{
+    display: none;
+}
+.student-feedback{
+    width: 85%;
+    margin: 0px auto;
+    text-align: justify;
+}
+.carousel{
+    position: relative;
+    top: 50px;
+}

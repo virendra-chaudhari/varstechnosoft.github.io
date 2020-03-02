@@ -1,0 +1,32 @@
+<section class="courses-section heading-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h1 class="">Placement</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 mb-2 "  *ngFor="let student of studentInfo">
+                <div class="cardStud text-center studentCard">
+                    <div class="studentImg">
+                        <img class="card-img-top" src="assets/img/{{student.imgUrl}}" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{student.name}}</h5>
+                        <p class="card-text">{{student.companyName}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>

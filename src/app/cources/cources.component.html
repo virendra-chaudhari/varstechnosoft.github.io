@@ -1,0 +1,221 @@
+<section class="courses-section heading-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <h1 class="">Our Courses</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let course of courseDetails ; let i = index" [attr.courseDetails-index]="i">
+                <div class="card service-box mb-3">
+                    <div class="card-body ">
+                        <h4 class="media-heading text-center  bg-secondary box-label">{{course.courseName}}</h4>
+                        <div class="">{{course.details}} </div>
+                        <div class="container">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary cardButton" data-toggle="modal"
+                                [attr.data-target]="'#myModal'+ course.id">
+                                Details
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal" [attr.id]="'myModal'+course.id">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">{{course.courseName}}</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <ul id="myUL">
+                                                <li><span class="caret">Beverages</span>
+                                                    <ul class="nested">
+                                                        <li>Water</li>
+                                                        <li>Coffee</li>
+                                                        <li><span class="caret">Tea</span>
+                                                            <ul class="nested">
+                                                                <li>Black Tea</li>
+                                                                <li>White Tea</li>
+                                                                <li><span class="caret">Green Tea</span>
+                                                                    <ul class="nested">
+                                                                        <li>Sencha</li>
+                                                                        <li>Gyokuro</li>
+                                                                        <li>Matcha</li>
+                                                                        <li>Pi Lo Chun</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                            <p>{{course.syllabus}}</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="card service-box">
+                    <div class="card-body">
+                        <h4 class="media- text-center bg-secondary box-label">Javascript</h4>
+                        <p class="">Javascript, often abbreviated as JS, is an interpreted programing laguage that
+                            comforms to the ECMAScript specification.Javascript is high-level, often just-in-time
+                            compiled, and milti-paradim.</p>
+                        <div class="container">
+                            <!-- Button to Open the Modal -->
+                            <div>
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#myModal4">
+                                    Details
+                                </button>
+
+                            </div>
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal4">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">JavaScript</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+
+                                            <li> Introduction to Client Side Scripting</li>
+                                            <li>Introduction to Java Script</li>
+                                            <li>Javascript Types</li>
+                                            <li>Variables in JS</li>
+                                            <li>Operators in JS</li>
+                                            <li>Conditions Statements</li>
+                                            <li>Java Script Loops</li>
+                                            <li>JS Popup Boxes</li>
+                                            <li>JS Events</li>
+                                            <li>JS Arrays</li>
+                                            <li>Working with Arrays</li>
+                                            <li>JS Objects</li>
+                                            <li>JS Functions</li>
+                                            <li>Using Java Script in Realtime</li>
+                                            <li>Validation of Forms</li>
+                                            <li>Related Examples</li>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card service-box">
+                    <div class="card-body">
+                        <h4 class="media-heading text-center bg-secondary box-label">CSS 3</h4>
+                        <p class="">Cascading Style Sheet (CSS) is a style sheet language used for describing the
+                            presentation of a document write in a markup language like HTML. CSS is a cornerstone
+                            technology of the World Wide Web, alongside HTML and Javascript.</p>
+                        <div class="container">
+                            <!-- Button to Open the Modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Details
+                            </button>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">CSS</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <h3>Some text to enable scrolling..</h3>
+                                            <ul id="myUL">
+                                                <li><span class="caret">Beverages</span>
+                                                    <ul class="nested">
+                                                        <li>Water</li>
+                                                        <li>Coffee</li>
+                                                        <li><span class="caret">Tea</span>
+                                                            <ul class="nested">
+                                                                <li>Black Tea</li>
+                                                                <li>White Tea</li>
+                                                                <li><span class="caret">Green Tea</span>
+                                                                    <ul class="nested">
+                                                                        <li>Sencha</li>
+                                                                        <li>Gyokuro</li>
+                                                                        <li>Matcha</li>
+                                                                        <li>Pi Lo Chun</li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

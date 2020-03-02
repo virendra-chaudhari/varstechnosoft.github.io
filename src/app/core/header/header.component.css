@@ -1,0 +1,15 @@
+.nav-fixed{
+    background: rgba(117, 5, 107, 0.9);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+
+}
+.color-white{
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.color-white:hover{
+    color: #F58220!important;
+  }
